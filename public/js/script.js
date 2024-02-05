@@ -51,7 +51,7 @@ document.querySelector('.subscribe-btn').addEventListener('click', function () {
                 return await Promise.reject(json)
             })
             .catch(e => {
-                console.log(e)
+                console.error(e)
             })
         console.log("Subscribe event!")
     }

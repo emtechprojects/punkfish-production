@@ -51,8 +51,8 @@ app.post('/subscribe', async function (req, res) {
 
 app.listen(port, function (err) {
     if (err) {
-        console.log(`Error trying to connect to port`)
+        console.log(`Error trying to connect to port ${err.message}`)
     } else {
-        console.log(`Successful connection to port ${port}`)
+        console.log(`Successful connection to port`)
     }
 })
