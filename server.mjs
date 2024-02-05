@@ -56,3 +56,5 @@ app.listen(port, function (err) {
         console.log(`Successful connection to port`)
     }
 })
+
+export default app
