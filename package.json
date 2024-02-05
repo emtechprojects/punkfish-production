@@ -1,0 +1,26 @@
+{
+  "name": "punkfish--production",
+  "version": "1.0.0",
+  "description": "punkfish-production",
+  "type": "module",
+  "engines": {
+    "node" : "18.x"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs",
+    "dev": "nodemon server.mjs --watch",
+    "vercel-build": "echo hello"
+  },
+  "author": "emtechprojects",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.8"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.1",
+    "nodemon": "^3.0.3"
+  }
+}
