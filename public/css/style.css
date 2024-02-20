@@ -2,6 +2,7 @@
     --pink: #ff84d4;
     --blue: #40e9ff;
 }
+
 *,
 *::before,
 *::after {
@@ -17,20 +18,15 @@ body {
     font-size: 22px;
     scroll-behavior: smooth;
     background: #fff;
+    font-family: "Chilanka", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
-    color: cornflowerblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: bold;
-    text-shadow: 0px 0px 1px grey;
-    letter-spacing: 1px;
-    transition: all 400ms;
-}
-
-a:hover {
-    color: rgb(92, 144, 240);
-    text-shadow: 0px 0px 1px black;
+    transition: all 300ms;
 }
 
 .pink {
@@ -38,6 +34,7 @@ a:hover {
     text-shadow: 0px 1px 1px black;
     letter-spacing: 1px;
 }
+
 .blue {
     color: var(--blue);
     text-shadow: 0px 1px 1px black;
@@ -117,6 +114,17 @@ nav {
 
 .nav-link {
     margin: 0px 5px;
+    color: black;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(0px 1px 0px var(--pink));
+}
+.nav-link:hover {
+    text-shadow: 0px 0px 1px pink;
+    filter: drop-shadow(0px 1px 1px var(--blue));
 }
 
 .parallax {
@@ -185,7 +193,11 @@ section {}
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #dedede;
+    /* background: #dedede; */
+    background-image: url(../images/Logo/background.png);
+    background-repeat: repeat;
+    box-shadow: 0px 0px 1px black;
+    /* border: 1px solid black; */
 }
 
 .gallery-item {
@@ -193,10 +205,13 @@ section {}
 }
 
 .gallery-img {
-    width: 200px;
+    width: 412px;
     height: auto;
     margin: auto;
-    border: 3px double black;
+    /* padding: 1px 0; */
+    box-shadow: 0px 0px 2px grey;
+    /* background-color: black; */
+    border: 1px double black;
     border-radius: 5px;
 }
 
@@ -221,10 +236,26 @@ section {}
     box-shadow: 0px 0px 1px black;
 }
 
+.page-heading {
+    width: auto;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(2px 5px var(--pink));
+}
+
 .section-heading {
     width: auto;
     padding: 10px;
     text-align: center;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .starters,
@@ -401,8 +432,16 @@ iframe {
 }
 
 footer {
+    padding: 30px 0 10px;
     background: #fff;
     text-align: center;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+footer a {
+    color: black !important;
 }
 
 @media only screen and (max-width:800px) {
@@ -481,16 +520,30 @@ footer {
     .subscribe-user input {
         width: 90%;
     }
+
     .subscribe-btn {
         margin-top: 1px;
     }
 
 }
 
+
+@media only screen and (max-width:420px) {
+    .gallery-img {
+        width: 375px;
+    }
+
+    .menu-inner {
+        width: 100%;
+        padding: 10px 2px;
+    }
+}
+
 @media only screen and (max-width:360px) {
     body {
         font-size: 14px;
     }
+
     .contacts {
         font-size: 13px;
     }
@@ -501,5 +554,16 @@ footer {
 
     .subscribe-btn {
         margin-left: 10%;
+    }
+
+    .gallery-img {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-height:395px) {
+
+    .gallery-img {
+        width: 260px;
     }
 }
