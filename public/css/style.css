@@ -113,10 +113,10 @@ nav {
 }
 
 .nav-link {
-    margin: 0px 5px;
+    margin: 0px 10px;
     color: black;
     font-size: 0.9rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-family: "Sedgwick Ave Display", cursive;
     font-weight: 400;
     font-style: normal;
@@ -183,8 +183,6 @@ main {
     margin-bottom: -20px;
 }
 
-section {}
-
 .gallery {
     width: 85%;
     margin: auto;
@@ -220,12 +218,11 @@ section {}
 }
 
 .main,
-.section-heading,
 .contacts-wrapper,
 .gallery-wrapper,
 .menu,
 .footer {
-    padding: 5%;
+    padding: 3% 0;
     background: #fff;
 }
 
@@ -246,12 +243,12 @@ section {}
     font-family: "Sedgwick Ave Display", cursive;
     font-weight: 400;
     font-style: normal;
-    filter: drop-shadow(2px 5px var(--pink));
+    filter: drop-shadow(2px 5px 1px var(--pink));
 }
 
 .section-heading {
     width: auto;
-    padding: 10px;
+    padding: 3% 0 1%;
     text-align: center;
     font-family: "Sedgwick Ave Display", cursive;
     font-weight: 400;
@@ -315,10 +312,12 @@ section {}
 }
 
 .about-body {
-    opacity: 70%;
-    width: 100%;
+    /* opacity: 90%; */
+    width: 96%;
     min-height: 400px;
+    margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -326,13 +325,15 @@ section {}
 .about-content {
     width: 80%;
     margin: auto;
+    padding: 5px 10px;
     color: white;
     font-size: 1.5em;
     text-shadow: 0px 0px 3px black;
-    filter: drop-shadow(0px 0px 2px black);
-    background-color: rgba(171, 171, 171, 0.333);
+    /* filter: drop-shadow(0px 0px 2px black); */
+    background-color: rgba(171, 171, 171, 0.424);
     border: 2px double black;
     border-radius: 5px;
+    text-align: center;
 }
 
 .about-us::before {
@@ -340,13 +341,19 @@ section {}
     width: 100vw;
     height: 900px;
     position: fixed;
-    opacity: 60%;
+    opacity: 75%;
     bottom: 0;
     z-index: -1;
     background-image: url('../images/crop2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.about-heading {
+    padding: 1% 0 2% 5%;
+    text-align: left;
+    font-family: "Sedgwick Ave Display", cursive;
 }
 
 
