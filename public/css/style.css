@@ -113,7 +113,7 @@ nav {
 }
 
 .nav-link {
-    margin: 0px 10px;
+    margin: 0 10px 0 0;
     color: black;
     font-size: 0.9rem;
     letter-spacing: 2px;
@@ -124,7 +124,7 @@ nav {
 }
 .nav-link:hover {
     text-shadow: 0px 0px 1px pink;
-    filter: drop-shadow(0px 1px 1px var(--blue));
+    filter: drop-shadow(0px 1px 0px var(--blue));
 }
 
 .parallax {
@@ -227,15 +227,17 @@ main {
 }
 
 .menu-inner {
-    width: 90%;
+    width: 96%;
     margin: auto;
     padding: 10px 20px;
-    box-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 3px;
+
 }
 
 .page-heading {
     width: auto;
-    margin: 20px auto;
+    margin: 20px auto 0;
     padding: 10px;
     text-align: center;
     font-size: 2.4rem;
@@ -248,8 +250,8 @@ main {
 
 .section-heading {
     width: 40%;
-    margin: 5% auto 3%;
-    padding: 1% 0 0;
+    margin: 4% auto 3%;
+    padding: 2% 0 1%;
     text-align: center;
     font-family: "Sedgwick Ave Display", cursive;
     font-weight: 400;
@@ -274,7 +276,7 @@ main {
 .childs,
 .sweets,
 .drinks {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -291,6 +293,7 @@ main {
 .drink {
     padding: 10px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -340,11 +343,11 @@ main {
 }
 
 .about-content {
-    width: 80%;
+    width: 85%;
     margin: 30px auto;
     padding: 5px 10px;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-shadow: 0px 0px 3px black;
     filter: drop-shadow(1px 1px 1px rgba(255, 255, 0, 0.438)) drop-shadow(-1px 1px 1px rgba(255, 0, 0, 0.339)) drop-shadow(1px -1px 1px rgba(0, 128, 0, 0.338)) drop-shadow(-1px -1px 1px rgba(0, 0, 255, 0.316));
     background-color: rgba(0, 0, 0, 0.2);
@@ -468,6 +471,11 @@ footer a {
     color: black !important;
 }
 
+.finger {
+    margin-left: 50px;
+    transform: scale(1.8);
+}
+
 @media only screen and (max-width:800px) {
     .chefy {
         margin-left: 50%;
@@ -476,7 +484,7 @@ footer a {
 
 @media only screen and (max-width:630px) {
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .about-us::before {
@@ -515,8 +523,11 @@ footer a {
     }
 
     .subscribe-btn {
-        margin-left: 25%;
+        margin-left: 20%;
         padding: 1px 5px;
+    }
+    .section-heading {
+        width: 65%;
     }
 }
 
@@ -526,7 +537,7 @@ footer a {
     }
 
     .contacts {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .subscribe {
@@ -548,7 +559,9 @@ footer a {
     .subscribe-btn {
         margin-top: 1px;
     }
-
+    .section-heading {
+        width: 80%;
+    }
 }
 
 
@@ -558,14 +571,13 @@ footer a {
     }
 
     .menu-inner {
-        width: 100%;
         padding: 10px 2px;
     }
 }
 
 @media only screen and (max-width:360px) {
     body {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .contacts {
@@ -577,12 +589,13 @@ footer a {
     }
 
     .subscribe-btn {
-        margin-left: 10%;
+        margin-left: 15%;
     }
 
     .gallery-img {
         width: 320px;
     }
+    input::placeholder {font-size: 10px;}
 }
 
 @media only screen and (max-height:395px) {
