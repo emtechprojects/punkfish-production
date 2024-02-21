@@ -341,16 +341,17 @@ main {
 
 .about-content {
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
     padding: 5px 10px;
     color: white;
     font-size: 1.5em;
     text-shadow: 0px 0px 3px black;
-    /* filter: drop-shadow(0px 0px 2px black); */
-    background-color: rgba(171, 171, 171, 0.424);
+    filter: drop-shadow(1px 1px 1px rgba(255, 255, 0, 0.438)) drop-shadow(-1px 1px 1px rgba(255, 0, 0, 0.339)) drop-shadow(1px -1px 1px rgba(0, 128, 0, 0.338)) drop-shadow(-1px -1px 1px rgba(0, 0, 255, 0.316));
+    background-color: rgba(0, 0, 0, 0.2);
     border: 2px double black;
     border-radius: 5px;
     text-align: center;
+    font-family: "Sedgwick Ave Display", cursive;
 }
 
 .about-us::before {
@@ -370,7 +371,6 @@ main {
 .about-heading {
     padding: 1% 0 2% 5%;
     text-align: left;
-    font-family: "Sedgwick Ave Display", cursive;
 }
 
 
