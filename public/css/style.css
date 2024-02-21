@@ -238,7 +238,7 @@ main {
     margin: 20px auto;
     padding: 10px;
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     letter-spacing: 1px;
     font-family: "Sedgwick Ave Display", cursive;
     font-weight: 400;
@@ -247,28 +247,48 @@ main {
 }
 
 .section-heading {
-    width: auto;
-    padding: 3% 0 1%;
+    width: 40%;
+    margin: 5% auto 3%;
+    padding: 1% 0 0;
     text-align: center;
     font-family: "Sedgwick Ave Display", cursive;
     font-weight: 400;
     font-style: normal;
+    background-color: rgba(240, 248, 255, 0.3);
+    border: 2px solid black;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-color: white;
+    border-right-color: white;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
+.oysters,
 .starters,
+.prawns,
 .mains,
 .sides,
-.drinks,
-.fishes {
+.sands,
+.sauces,
+.childs,
+.sweets,
+.drinks {
     width: 90%;
     margin: auto;
 }
 
+.starter-name,
+.main-name,
+.side-name,
+.drink-name {
+    text-shadow: 0px 0px 1px black;
+    padding-bottom: 5px;
+}
 .starter,
 .main,
 .side,
-.drink,
-.fish {
+.drink {
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -277,8 +297,7 @@ main {
 
 .starter-img,
 .main-img,
-.side-img,
-.fish-img {
+.side-img {
     width: 50px;
     height: 50px;
     border: 2px double silver;
@@ -287,9 +306,8 @@ main {
 
 .starter-body,
 .main-body,
-.side-body,
-.fish-body {
-    width: 90%;
+.side-body {
+    width: 80%;
     margin: 0 2px;
     text-align: center;
 }
@@ -301,8 +319,7 @@ main {
 .starter-price,
 .main-price,
 .side-price,
-.drink-price,
-.fish-price {
+.drink-price {
     padding-left: 5px;
 }
 
@@ -459,7 +476,7 @@ footer a {
 
 @media only screen and (max-width:630px) {
     body {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .about-us::before {
