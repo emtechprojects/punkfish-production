@@ -283,7 +283,7 @@ summary {
 }
 
 summary::marker {
-    display: none;
+    display: none !important;
     color: #706c6f !important;
     /* font-size: 1.6em !important; */
 }
