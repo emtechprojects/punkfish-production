@@ -122,6 +122,7 @@ nav {
     font-style: normal;
     filter: drop-shadow(0px 1px 0px var(--pink));
 }
+
 .nav-link:hover {
     text-shadow: 0px 0px 1px pink;
     filter: drop-shadow(0px 1px 0px var(--blue));
@@ -217,7 +218,6 @@ main {
     width: 100%;
 }
 
-.main,
 .contacts-wrapper,
 .gallery-wrapper,
 .menu,
@@ -248,22 +248,43 @@ main {
     filter: drop-shadow(2px 5px 1px var(--pink));
 }
 
-.section-heading {
-    width: 40%;
-    margin: 4% auto 3%;
-    padding: 2% 0 1%;
+details {
+    width: 80%;
+    margin: 8px auto;
+    padding: 2% 0;
+    /* background-color: rgba(211, 192, 172, 0.7); */
+    /* background: radial-gradient(rgba(219, 189, 158, 0.8), rgba(0, 0, 0, 0.169)); */
+    /* background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.169)); */
+    background: radial-gradient(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2));
+    border: 2px double black;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 8px;
+}
+
+details:hover {
+    cursor: pointer;
+    background: rgba(240, 248, 255, 0.75) !important;
+}
+
+details[open] {
+    background: rgba(240, 248, 255, 0.75) !important;
+}
+
+summary {
+    margin: 0 auto 0 auto;
+    padding: 10px 0 7px;
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 1px;
     text-align: center;
-    font-family: "Sedgwick Ave Display", cursive;
-    font-weight: 400;
-    font-style: normal;
-    background-color: rgba(240, 248, 255, 0.3);
-    border: 2px solid black;
-    border-top-color: black;
-    border-bottom-color: black;
-    border-left-color: white;
-    border-right-color: white;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+summary::marker {
+    color: #706c6f !important;
+    /* font-size: 1.6em !important; */
 }
 
 .oysters,
@@ -284,9 +305,12 @@ main {
 .main-name,
 .side-name,
 .drink-name {
-    text-shadow: 0px 0px 1px black;
+    /* text-shadow: 0px 0px 1px black; */
     padding-bottom: 5px;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
+
 .starter,
 .main,
 .side,
@@ -467,6 +491,7 @@ footer {
     font-style: normal;
     letter-spacing: 1px;
 }
+
 footer a {
     color: black !important;
 }
@@ -526,6 +551,7 @@ footer a {
         margin-left: 20%;
         padding: 1px 5px;
     }
+
     .section-heading {
         width: 65%;
     }
@@ -559,6 +585,7 @@ footer a {
     .subscribe-btn {
         margin-top: 1px;
     }
+
     .section-heading {
         width: 80%;
     }
@@ -571,7 +598,10 @@ footer a {
     }
 
     .menu-inner {
-        padding: 10px 2px;
+        padding: 2px;
+    }
+    details {
+        width: 96%;
     }
 }
 
@@ -595,7 +625,10 @@ footer a {
     .gallery-img {
         width: 320px;
     }
-    input::placeholder {font-size: 10px;}
+
+    input::placeholder {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-height:395px) {
